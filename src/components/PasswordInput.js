@@ -35,6 +35,23 @@ function getInputStyle(passwordLength) {
 //     backgroundColor: `hsl(${hue}, 100%, 50%)`
 //   };
 // }
+// Oder wie die Lösung oben
+// function getInputStyle(length) {
+//   const hue = length * 10;
+//   return {
+//     backgroundColor: `hsl(${hue > 100 ? 100 : hue}, 100%, 50%)`
+//   };
+// }
+
+//Oder mit dem Math min, dass die kleinere Zahl ausgibt.
+
+// function getInputStyle(length) {
+//   const hue = Math.min(length * 10, 100);
+
+//   return {
+//     backgroundColor: `hsl(${hue}, 100%, 50%)`
+//   };
+// }
 
 function PasswordInput() {
   const [password, setPassword] = useState("");
