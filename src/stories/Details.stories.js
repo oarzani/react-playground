@@ -1,10 +1,4 @@
 import React from "react";
-
-import Rating from "../icons/Rating";
-import Euro from "../icons/Euro";
-
-import Ratings from "../components/Ratings";
-import Pricing from "../components/Pricing";
 import Distance from "../components/Distance";
 import Rate from "../components/Rate";
 import Price from "../components/Price";
