@@ -4,7 +4,7 @@
 
 import React from "react";
 import styled from "styled-components";
-// import Walk from "../icons/Walk";
+// walk impeir
 
 const Button = styled.button`
   width: 60px;
