@@ -1,44 +1,43 @@
 import React from "react";
-import Details from "../components/Details";
-import Walk from "../icons/Walk";
+
 import Rating from "../icons/Rating";
 import Euro from "../icons/Euro";
+
+import Ratings from "../components/Ratings";
+import Pricing from "../components/Pricing";
+import Distance from "../components/Distance";
+import Rate from "../components/Rate";
 
 export default {
   title: "DetailsDiv"
 };
 
-export const Sample = () => (
-  <Details>
-    <Walk /> &nbsp; 5min
-  </Details>
-);
+export const DistanceShort = () => <Distance value={3} />;
 
-export const Star = () => (
-  <Details>
-    <Rating /> &nbsp;5.1
-  </Details>
-);
+export const DistanceLong = () => <Distance value={6} />;
+
+export const RateHigh = () => <Rate value={4.8} />;
+export const RateLow = () => <Rate value={2.8} />;
 
 export const PriceLow = () => (
-  <Details>
+  <Pricing>
     <Euro />
     <Euro isGrey={true} />
     <Euro isGrey={true} />
-  </Details>
+  </Pricing>
 );
 
 export const PriceMedium = () => (
-  <Details>
+  <Pricing>
     <Euro />
     <Euro />
     <Euro isGrey={true} />
-  </Details>
+  </Pricing>
 );
 export const PriceHigh = () => (
-  <Details>
+  <Pricing>
     <Euro />
     <Euro />
     <Euro />
-  </Details>
+  </Pricing>
 );
